@@ -27,6 +27,10 @@ app.get("/", (req, res) => {
     res.render('user', {users:users})
 })
 
+app.get("/about", (req, res) => {
+    res.render('about')
+})
+
 app.listen(PORT, () => {
     console.log(`Servidor rodando corretamente na porta ${PORT}` );
 })
